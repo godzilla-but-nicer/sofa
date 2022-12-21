@@ -21,10 +21,10 @@ def parse(root, tag):
 
 
 # now we have to handle all of these fuxking xml files
-bad_reads = 0
 rows = []
 for year in range(start_year, end_year + 1):
-    year_files = glob(f"../data/nsf/xml/{year}/*.xml")
+    bad_reads = 0
+    year_files = glob(f"data/nsf/xml/{year}/*.xml")
     for fxml in year_files:
 
         # some of the xml won't parse and thats none of my business
@@ -63,4 +63,4 @@ for year in range(start_year, end_year + 1):
     
 # convert to dataframe
 nsf_df = pd.DataFrame(rows)
-nsf_df.to_csv(f"data/nsf/nsf_data_{start_year}_{end_year}.csv")
+nsf_df.to_csv(f"data/nsf/nsf_awards.csv")

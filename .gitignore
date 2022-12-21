@@ -1,5 +1,5 @@
 # data files
-data/*.csv
+
 data/*.pajek
 *.xml
 *.zip
@@ -7,6 +7,9 @@ data/*.pajek
 # plots
 plots/*.png
 plots/*.pdf
+
+# snakemake junk
+.snakemake/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
