@@ -1,6 +1,8 @@
 # data files
 data/*.csv
 data/*.pajek
+*.xml
+*.zip
 
 # plots
 plots/*.png
