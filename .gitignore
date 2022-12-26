@@ -1,5 +1,6 @@
 # data files
-
+*.json
+data/aps/*.csv
 data/*.pajek
 *.xml
 *.zip

@@ -8,8 +8,8 @@ from tqdm import tqdm
 # and have unzipped them into data/nsf/xml/
 
 # start and end years for analysis
-start_year = 1993
-end_year = 2003
+start_year = 1999
+end_year = 2019
 
 # a little helper function for parsing the xml by tag
 def parse(root, tag):
